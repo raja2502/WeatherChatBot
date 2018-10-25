@@ -2,12 +2,12 @@ from weather import Weather, Unit
 from textblob import TextBlob
 import datetime
 import re
-from uszipcode import ZipcodeSearchEngine
+from uszipcode import SearchEngine
 from chatterbot import ChatBot
 import chatterbot
 import sys
 
-search = ZipcodeSearchEngine()
+search = SearchEngine()
 weather = Weather(unit=Unit.CELSIUS)
 today = datetime.date.today()
 
