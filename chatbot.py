@@ -60,8 +60,8 @@ def weather_function(txt) :
         zip=match.groupdict()['zipcode'] # should be 75009
         print(zip)
         zipcode = search.by_zipcode(str(zip))
-        if zipcode.City != None :
-            a  = getWeatherbyCity(zipcode.City)
+        if zipcode.major_city != None :
+            a  = getWeatherbyCity(zipcode.major_city)
         else :
             lookup = weather.lookup(zip)
             condition = lookup.condition	    
